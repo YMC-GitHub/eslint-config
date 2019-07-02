@@ -4,7 +4,8 @@
 ## Getting started
 
 [run-as-a-local-module-in-cli](./run-as-a-local-module-in-cli.md)
-[run-as-a-local-module-in-scripts](./run-as-a -local-module-in-scripts.md)
+
+[run-as-a-local-module-in-scripts](./run-as-a-local-module-in-scripts.md)
 
 ## Commit style standard
 [my-git-commit-style-standard](./my-git-commit-style-standard.md)
