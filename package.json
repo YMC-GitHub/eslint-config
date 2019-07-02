@@ -1,0 +1,25 @@
+{
+  "name": "commitlint-config-yemiancheng",
+  "version": "1.0.0",
+  "description": "Shareable commitlint config ",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ymc-github/commitlint-config.git"
+  },
+  "keywords": [
+    "commitlint",
+    "commitlint-config",
+    "yemiancheng",
+    "angular"
+  ],
+  "author": "yemiancheng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ymc-github/commitlint-config/issues"
+  },
+  "homepage": "https://github.com/ymc-github/commitlint-config#readme"
+}
