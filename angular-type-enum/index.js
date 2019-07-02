@@ -1,35 +1,29 @@
 const types = [
 
-	'build',
+    'build',
 
-	'ci',
+    'ci',
 
-	'docs',
+    'docs',
 
-	'feat',
+    'feat',
 
-	'fix',
+    'fix',
 
-	'perf',
+    'perf',
 
-	'refactor',
+    'refactor',
 
-	'revert',
+    'revert',
 
-	'style',
+    'style',
 
-	'test'
+    'test',
 
-];
-
-
-
+]
 module.exports.rules = {
 
-	'type-enum': [2, 'always', types]
+    'type-enum': [2, 'always', types],
 
-};
-
-
-
-module.exports.value = () => types;
+}
+module.exports.value = () => types
