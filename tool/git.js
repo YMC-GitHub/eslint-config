@@ -34,11 +34,14 @@ function commit(message){
     console.log(message)
     return execa("git",["commit","-m",message])
 }
-
+function remote(opts){
+  return execa("git",["remote",...(opts || [])])
+}
 module.exports = {
     init,
     addFile,
     addAll,
     status,
-    commit
+    commit,
+    remote
 }
