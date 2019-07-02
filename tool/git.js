@@ -37,11 +37,15 @@ function commit(message){
 function remote(opts){
   return execa("git",["remote",...(opts || [])])
 }
+function push(opts){
+  return execa("git",["push",...(opts || [])])
+}
 module.exports = {
     init,
     addFile,
     addAll,
     status,
     commit,
-    remote
+    remote,
+    push
 }

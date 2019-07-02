@@ -6,7 +6,7 @@ const {addFile,commit,remote} = require('./git');
  read({edit: '.git/COMMIT_EDITMSG'})
  .then(content => lint(content[0],rules))
  .then(msg => { 
-    return addFile(['package.json','tool/']).then(()=>msg);
+    return addFile(['tool/*.js']).then(()=>msg);
   })
  .then(result => {
      if(result.valid){
@@ -18,3 +18,4 @@ const {addFile,commit,remote} = require('./git');
  })
  .then(report => console.log(report.stdout))
  .catch(console.log);
+
