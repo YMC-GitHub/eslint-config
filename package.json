@@ -21,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/ymc-github/commitlint-config/issues"
   },
-  "homepage": "https://github.com/ymc-github/commitlint-config#readme"
+  "homepage": "https://github.com/ymc-github/commitlint-config#readme",
+  "devDependencies": {
+    "@commitlint/lint": "^8.0.0",
+    "@commitlint/read": "^8.0.0",
+    "execa": "^2.0.2"
+  }
 }
