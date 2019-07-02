@@ -1,6 +1,8 @@
 # commitlint-config-yemiancheng
 > Lint my git commits, angular-style
 
+
+![Travis (.com) branch](https://img.shields.io/travis/com/ymc-github/commitlint-config/master.svg?color=ff69b4)
 ## Getting started
 
 [run-as-a-local-module-in-cli](./run-as-a-local-module-in-cli.md)
