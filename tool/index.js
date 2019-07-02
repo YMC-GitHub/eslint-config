@@ -1,7 +1,7 @@
 const rules = require('../index.js').rules;
 const read = require('@commitlint/read');
 const lint = require('@commitlint/lint');
-const {addFile,commit,remote} = require('./git');
+const {addFile,commit} = require('./git');
 
  read({edit: '.git/COMMIT_EDITMSG'})
  .then(content => lint(content[0],rules))
