@@ -7,7 +7,7 @@ const { addFile, commit } = require('./git')
 
 read({ edit: '.git/COMMIT_EDITMSG' })
     .then(content => lint(content[0], rules))
-    .then(msg => addFile(['tool/index.js', '.vscode/*.json']).then(() => msg))
+    .then(msg => addFile(['tool/index.js', '.travis.yml']).then(() => msg))
     .then((result) => {
         if (result.valid) {
             return commit(result.input)
