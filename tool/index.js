@@ -1,21 +1,19 @@
-const rules = require('../index.js').rules;
-const read = require('@commitlint/read');
-const lint = require('@commitlint/lint');
-const {addFile,commit} = require('./git');
+/* eslint-disable no-console */
+/* eslint-disable import/no-extraneous-dependencies */
+const read = require('@commitlint/read')
+const lint = require('@commitlint/lint')
+const { rules } = require('../index.js')
+const { addFile, commit } = require('./git')
 
- read({edit: '.git/COMMIT_EDITMSG'})
- .then(content => lint(content[0],rules))
- .then(msg => { 
-    return addFile(['tool/*.js']).then(()=>msg);
-  })
- .then(result => {
-     if(result.valid){
-        return commit(result.input)
-     }else{
+read({ edit: '.git/COMMIT_EDITMSG' })
+    .then(content => lint(content[0], rules))
+    .then(msg => addFile(['angular-type-enum/*.js', 'tool/*.js', '.eslintrc.js', 'index.js', 'package.json']).then(() => msg))
+    .then((result) => {
+        if (result.valid) {
+            return commit(result.input)
+        }
         console.log(result)
         return result
-     }
- })
- .then(report => console.log(report.stdout))
- .catch(console.log);
-
+    })
+    .then(report => console.log(report.stdout))
+    .catch(console.log)

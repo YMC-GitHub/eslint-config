@@ -1,44 +1,31 @@
-const execa = require('execa');
+// eslint-disable-next-line import/no-extraneous-dependencies
+const execa = require('execa')
 /*
 execa("git",["log","-n 1"]).then(result => {
     console.log(result.stdout);
 }).catch(err => console.log(err));
 */
-function pwd(){
-    return execa("pwd")
+function init() {
+    return execa('git', ['init'])
 }
-function cd(repoPath){
-    return execa("cd",[repoPath])
+function addFile(file) {
+    return execa('git', ['add', ...(file || [])])
 }
-function ls(repoPath){
-    return execa("ls",[repoPath])
+function addAll() {
+    return execa('git', ['add', '.'])
 }
-function mkdir(repoPath){
-    return execa("mkdir",["--parents",repoPath])
-}
-
-function init(){
-    return execa("git",["init"])
-}
-function addFile(file){
-    return execa("git",["add",...(file || [])])
-}
-function addAll(){
-    return execa("git",["add","."])
-}
-function status(){
-    return execa("git",["status"])
+function status() {
+    return execa('git', ['status'])
 }
 
-function commit(message){
-    console.log(message)
-    return execa("git",["commit","-m",message])
+function commit(message) {
+    return execa('git', ['commit', '-m', message])
 }
-function remote(opts){
-  return execa("git",["remote",...(opts || [])])
+function remote(opts) {
+    return execa('git', ['remote', ...(opts || [])])
 }
-function push(opts){
-  return execa("git",["push",...(opts || [])])
+function push(opts) {
+    return execa('git', ['push', ...(opts || [])])
 }
 module.exports = {
     init,
@@ -47,5 +34,5 @@ module.exports = {
     status,
     commit,
     remote,
-    push
+    push,
 }
