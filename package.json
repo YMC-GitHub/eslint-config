@@ -1,27 +1,32 @@
 {
-  "name": "commitlint-config-yemiancheng",
+  "name": "eslint-config-yemiancheng",
   "version": "1.0.0",
-  "description": "Shareable commitlint config ",
+  "description": "Shareable eslint config ",
   "main": "index.js",
   "scripts": {
     "test": "exit 0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ymc-github/commitlint-config.git"
+    "url": "git+https://github.com/ymc-github/eslint-config.git"
   },
   "keywords": [
-    "commitlint",
-    "commitlint-config",
+    "eslint",
+    "eslint-config",
     "yemiancheng",
-    "angular"
+    "javascript",
+    "style guide",
+    "es2015",
+    "es2016",
+    "es2017",
+    "es2018"
   ],
   "author": "yemiancheng",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ymc-github/commitlint-config/issues"
+    "url": "https://github.com/ymc-github/eslint-config/issues"
   },
-  "homepage": "https://github.com/ymc-github/commitlint-config#readme",
+  "homepage": "https://github.com/ymc-github/eslint-config#readme",
   "devDependencies": {
     "@commitlint/lint": "^8.0.0",
     "@commitlint/read": "^8.0.0",
