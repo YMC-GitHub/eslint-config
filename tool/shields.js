@@ -1,7 +1,7 @@
 
 const SHIELDS_URL = 'https://img.shields.io'
 
-const GITHUB_REPO = 'commitlint-config'
+const GITHUB_REPO = 'eslint-config'
 const GITHUB_USER = 'ymc-github'
 const TWITTER_USER = 'yemiancheng'
 
