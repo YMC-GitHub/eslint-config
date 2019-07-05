@@ -163,4 +163,5 @@ if (GITHUB_LANGUAGE_TOP === 'sets') reslut += `\r\n${githubLanguageTop({})}`
 if (GITHUB_PACKAGE_VERSION_BRANCH === 'sets') reslut += `\r\n${githubPackageVersionBranch({})}`
 if (GITHUB_FOLLOWERS === 'sets') reslut += `\r\n${githubFollowers({})}`
 if (TWITTER_FOLLOWERS === 'sets') reslut += `\r\n${twitterFollowers({})}`
+// eslint-disable-next-line no-console
 console.log(reslut)

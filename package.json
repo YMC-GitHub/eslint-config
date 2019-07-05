@@ -4,7 +4,8 @@
   "description": "Shareable eslint config ",
   "main": "index.js",
   "scripts": {
-    "test": "exit 0"
+    "test": "exit 0",
+    "lint": "eslint --report-unused-disable-directives ."
   },
   "repository": {
     "type": "git",
@@ -28,11 +29,17 @@
   },
   "homepage": "https://github.com/ymc-github/eslint-config#readme",
   "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "@babel/runtime": "^7.4.5",
     "@commitlint/lint": "^8.0.0",
     "@commitlint/read": "^8.0.0",
+    "babel-preset-airbnb": "^4.0.1",
     "eslint": "^5.3.0",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-plugin-import": "^2.17.2",
-    "execa": "^2.0.2"
+    "execa": "^2.0.2",
+    "make-dir": "^3.0.0",
+    "tape": "^4.11.0"
   }
 }
