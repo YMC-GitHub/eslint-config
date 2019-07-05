@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 const execa = require('execa')
 /*
 execa("git",["log","-n 1"]).then(result => {
