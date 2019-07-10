@@ -8,7 +8,9 @@ read({ edit: '.git/COMMIT_EDITMSG' })
   .then((result) => {
     if (result.valid) {
       return addFile([
-        'tool/index.js'
+        'tool/index.js',
+        'rules/style.js',
+        './index.js'
       ]).then(()=>commit(result.input));
     }
     // eslint-disable-next-line
