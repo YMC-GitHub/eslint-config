@@ -5,14 +5,11 @@ const { addFile, commit } = require('./git');
 
 read({ edit: '.git/COMMIT_EDITMSG' })
   .then(content => lint(content[0], rules))
-  .then(msg => addFile([
-    'tool/index.js', 'tool/git.js','tool/shields.js',
-    './rules/errors.js','index.js','.eslintrc.js','test/*','babel.config.js',
-    'package.json'
-  ]).then(() => msg))
   .then((result) => {
     if (result.valid) {
-      return commit(result.input);
+      return addFile([
+        'tool/index.js'
+      ]).then(()=>commit(result.input));
     }
     // eslint-disable-next-line
     console.log(result);
