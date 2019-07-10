@@ -1,3 +1,3 @@
-const { push } = require('./git')
+const { push } = require('./git');
 
-push(['--set-upstream', 'origin', 'master'])
+push(['--set-upstream', 'origin', 'master']);
