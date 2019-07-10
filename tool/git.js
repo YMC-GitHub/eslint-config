@@ -1,3 +1,4 @@
+/* eslint-env node */
 const execa = require('execa');
 /*
 execa("git",["log","-n 1"]).then(result => {

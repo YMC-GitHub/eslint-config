@@ -1,3 +1,4 @@
+/* eslint-env node */
 /* eslint-disable no-console */
 const { remote } = require('./git');
 

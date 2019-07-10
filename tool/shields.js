@@ -1,4 +1,5 @@
 
+/* eslint-env node */
 const SHIELDS_URL = 'https://img.shields.io';
 
 const GITHUB_REPO = 'eslint-config';
