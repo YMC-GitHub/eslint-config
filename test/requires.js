@@ -1,3 +1,4 @@
+/* eslint-env node */
 /* eslint
    strict: 0,
    global-require: 0,

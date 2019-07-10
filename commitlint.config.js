@@ -1,3 +1,4 @@
+/* eslint-env node */
 const typeEnum = require('./angular-type-enum/index.js');
 
 module.exports = {
