@@ -4,22 +4,18 @@ const lint = require('@commitlint/lint');
 const { rules } = require('../commitlint.config.js');
 const { addFile, commit } = require('./git');
 
-let fileListStr = `
+const fileListStr = `
 index.js
-rules/errors.js
-rules/style.js
-rules/variables.js
-rules/node.js
-test/test-base.js
+rules/es6.js
 tool/index.js
 `;
-let fileListArr = fileListStr.split('\n').map(v=>v.trim()).filter(v=>(v !== ''));
+const fileListArr = fileListStr.split('\n').map(v => v.trim()).filter(v => (v !== ''));
 // console.log(fileListArr);
 read({ edit: '.git/COMMIT_EDITMSG' })
   .then(content => lint(content[0], rules))
   .then((result) => {
     if (result.valid) {
-      return addFile(fileListArr).then(()=>commit(result.input));
+      return addFile(fileListArr).then(() => commit(result.input));
     }
     // eslint-disable-next-line
     console.log(result);
