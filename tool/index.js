@@ -6,7 +6,8 @@ const { addFile, commit } = require('./git');
 
 const fileListStr = `
 tool/index.js
-readme.md
+package.json
+.travis.yml
 `;
 const fileListArr = fileListStr.split('\n').map(v => v.trim()).filter(v => (v !== ''));
 // console.log(fileListArr);
