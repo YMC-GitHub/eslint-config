@@ -54,4 +54,21 @@
 
   //
   "eslint.workingDirectories": [],
+
+  //---圈复杂度---
+  // 是否开启
+	// A flag which indicates whether code metrics are shown as code lens
+	"codemetrics.basics.CodeLensEnabled": true,
+  // 多长显示
+	// Threshold to show code lens for code metrics
+	"codemetrics.basics.CodeLensHiddenUnder": 3,
+  // 颜色区分
+	// Color for the extreme complexity level
+	"codemetrics.basics.ComplexityColorExtreme": "#ff0000",
+	// Color for the high complexity level
+	"codemetrics.basics.ComplexityColorHigh": "#f44034",
+	// Color for the low complexity level
+	"codemetrics.basics.ComplexityColorLow": "#4bb14f",
+	// Color for the normal complexity level
+	"codemetrics.basics.ComplexityColorNormal": "#ffc208",
 }
