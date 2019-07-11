@@ -5,8 +5,11 @@ const { rules } = require('../commitlint.config.js');
 const { addFile, commit } = require('./git');
 
 const fileListStr = `
-package.json
 tool/index.js
+package.json
+./test/es6Entry.js
+./test/basic.js
+./test/validate-config.js
 `;
 const fileListArr = fileListStr.split('\n').map(v => v.trim()).filter(v => (v !== ''));
 // console.log(fileListArr);
