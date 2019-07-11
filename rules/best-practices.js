@@ -37,7 +37,8 @@ module.exports = {
     'dot-notation': [
       'error',
       {
-        allowKeywords: true
+        allowKeywords: true,
+        allowPattern: ''
       }
     ],
     eqeqeq: [

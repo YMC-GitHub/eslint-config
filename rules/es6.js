@@ -95,7 +95,7 @@ module.exports = {
       }
     ],
     'prefer-destructuring': [
-      'error',
+      0,
       {
         AssignmentExpression: {
           array: true,
