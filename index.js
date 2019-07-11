@@ -1,6 +1,7 @@
 /* eslint-env node */
 module.exports = {
   extends: [
+    './rules/best-practices',
     './rules/errors',
     './rules/style',
     './rules/variables',

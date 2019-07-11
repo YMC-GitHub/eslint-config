@@ -6,7 +6,7 @@ const { addFile, commit } = require('./git');
 
 const fileListStr = `
 index.js
-rules/es6.js
+rules/best-practices.js
 tool/index.js
 `;
 const fileListArr = fileListStr.split('\n').map(v => v.trim()).filter(v => (v !== ''));
