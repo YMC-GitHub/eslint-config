@@ -1,4 +1,3 @@
-/* eslint-env node */
 module.exports = {
   rules: {
     'init-declarations': 'off',

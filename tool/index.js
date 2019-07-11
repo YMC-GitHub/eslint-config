@@ -5,21 +5,13 @@ const { rules } = require('../commitlint.config.js');
 const { addFile, commit } = require('./git');
 
 let fileListStr = `
-angular-type-enum/index.js
-babel.config.js
-commitlint.config.js
 index.js
 rules/errors.js
 rules/style.js
 rules/variables.js
-test/es6Entry.js
-test/requires.js
+rules/node.js
 test/test-base.js
-tool/addOrigin.js
-tool/firstPush.js
-tool/git.js
 tool/index.js
-rules/variables.js
 `;
 let fileListArr = fileListStr.split('\n').map(v=>v.trim()).filter(v=>(v !== ''));
 // console.log(fileListArr);
