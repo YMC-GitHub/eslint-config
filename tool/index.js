@@ -5,9 +5,7 @@ const { rules } = require('../commitlint.config.js');
 const { addFile, commit } = require('./git');
 
 const fileListStr = `
-tool/eslint/index.js
-tool/eslint/config-file.js
-data/
+.vscode/settings.json
 tool/index.js
 `;
 const fileListArr = fileListStr.split('\n').map(v => v.trim()).filter(v => (v !== ''));
