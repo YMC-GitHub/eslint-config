@@ -5,7 +5,7 @@ const { rules } = require('../commitlint.config.js');
 const { addFile, commit } = require('./git');
 
 const fileListStr = `
-.vscode/settings.json
+package.json
 tool/index.js
 `;
 const fileListArr = fileListStr.split('\n').map(v => v.trim()).filter(v => (v !== ''));
