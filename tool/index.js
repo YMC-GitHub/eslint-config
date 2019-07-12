@@ -6,7 +6,8 @@ const { addFile, commit } = require('./git');
 
 const fileListStr = `
 tool/index.js
-.npmignore
+.npmrc
+.gitignore
 `;
 const fileListArr = fileListStr.split('\n').map(v => v.trim()).filter(v => (v !== ''));
 // console.log(fileListArr);
