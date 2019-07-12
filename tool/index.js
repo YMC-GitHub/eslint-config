@@ -6,7 +6,11 @@ const { addFile, commit } = require('./git');
 
 const fileListStr = `
 tool/index.js
-tool/showOrigin.js
+readme.md
+run-as-a-local-module.md
+note-using-commitlint.md
+note-using-editorconfig-tool.md
+note-using-eslint-find-rules.md
 `;
 const fileListArr = fileListStr.split('\n').map(v => v.trim()).filter(v => (v !== ''));
 // console.log(fileListArr);
