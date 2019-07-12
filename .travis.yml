@@ -86,8 +86,8 @@ matrix:
     env: ESLINT_VERSION=2
     node_js: 4
 
-
-allow_failures:
+  fast_finish: true
+  allow_failures:
   # for linux/win/mac nodejs:6 eslint:2-6
   # SyntaxError: Unexpected token
   - node_js: '6'
