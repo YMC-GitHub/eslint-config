@@ -11,3 +11,11 @@
 ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/ymc-github/eslint-config/master.svg?label=github%20package.json%20version%40master&color=ff69b4&logo=Github&logoColor=ff69b4&style=popout-square)
 ![GitHub followers](https://img.shields.io/github/followers/ymc-github.svg?label=github%20followers&color=ff69b4&logo=Github&logoColor=ff69b4&style=popout-square)
 ![Twitter Follow](https://img.shields.io/twitter/follow/yemiancheng.svg?label=follow%20%40yemiancheng&color=ff69b4&logo=Twitter&logoColor=ff69b4&style=popout-square)
+
+## Getting started
+
+[run-as-a-local-module](./run-as-a-local-module.md)
+
+
+## Commit style standard
+[my-git-commit-style-standard](./my-git-commit-style-standard.md)
