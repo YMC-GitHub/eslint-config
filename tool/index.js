@@ -6,7 +6,11 @@ const { addFile, commit } = require('./git');
 
 const fileListStr = `
 tool/index.js
-.travis.yml
+./tool/push.js
+./tool/console.js
+./tool/listOrigin.js
+./tool/setOrigin.js
+./tool/showOrigin.js
 `;
 const fileListArr = fileListStr.split('\n').map(v => v.trim()).filter(v => (v !== ''));
 // console.log(fileListArr);
