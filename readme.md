@@ -1,6 +1,3 @@
-# eslint-config-yemiancheng
-> Lint my javascript code style
-
 ![Travis (.com) branch](https://img.shields.io/travis/com/ymc-github/eslint-config/master.svg?label=Travis%20CI&color=ff69b4&logo=Travis%20CI&logoColor=ff69b4&style=popout-square)
 ![GitHub repo size](https://img.shields.io/github/repo-size/ymc-github/eslint-config.svg?label=github%20repo%20size&color=ff69b4&logo=Github&logoColor=ff69b4&style=popout-square)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ymc-github/eslint-config.svg?color=ff69b4&logo=Github&logoColor=ff69b4&style=popout-square)
@@ -12,10 +9,33 @@
 ![GitHub followers](https://img.shields.io/github/followers/ymc-github.svg?label=github%20followers&color=ff69b4&logo=Github&logoColor=ff69b4&style=popout-square)
 ![Twitter Follow](https://img.shields.io/twitter/follow/yemiancheng.svg?label=follow%20%40yemiancheng&color=ff69b4&logo=Twitter&logoColor=ff69b4&style=popout-square)
 
-## Getting started
+# eslint-config-yemiancheng
 
-[run-as-a-local-module](./run-as-a-local-module.md)
+## desc
+
+Lint my javascript code style
+
+## how to use for production?
+### install
+
+```sh
+npm install --save-dev eslint-config-yemiancheng
+#or
+npm install https://github.com/YMC-GitHub/eslint-config.git#v1.0.0 --save-dev
+```
+
+### usage
+
+Add "extends": "yemiancheng" to your .eslintrc.js
+```sh
+echo "module.exports = {extends: ['yemiancheng']};" > .eslintrc.js
+```
 
 
-## Commit style standard
-[my-git-commit-style-standard](./my-git-commit-style-standard.md)
+## Author
+
+yemiancheng <ymc.github@gmail.com>
+
+## License
+
+MIT
