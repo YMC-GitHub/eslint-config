@@ -6,8 +6,8 @@ const { addFile, commit } = require('./git');
 
 const fileListStr = `
 tool/index.js
-.npmrc
-.gitignore
+package.json
+commitlint.config.js
 `;
 const fileListArr = fileListStr.split('\n').map(v => v.trim()).filter(v => (v !== ''));
 // console.log(fileListArr);
@@ -25,3 +25,6 @@ read({ edit: '.git/COMMIT_EDITMSG' })
   .then(report => console.log(report.stdout))
   // eslint-disable-next-line
   .catch(console.log);
+
+//file-usage
+//node tool/index.js
