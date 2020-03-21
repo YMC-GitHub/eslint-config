@@ -6,7 +6,7 @@
   // Always show the ESlint status bar item.
   "eslint.alwaysShowStatus": false,
   // Turns auto fix on save on or off.
-  "eslint.autoFixOnSave": true, // false
+  //"eslint.autoFixOnSave": true, // false
   //
   "eslint.codeAction.disableRuleComment": {
     "enable": true,
@@ -25,7 +25,8 @@
   // The package manager you use to install node modules.
   "eslint.packageManager": "npm",
   // Controls whether a task for linting the whole workspace will be available.
-  "eslint.provideLintTask": false,
+  //"eslint.provideLintTask": false,
+  "eslint.lintTask.enable": false,
   // Turns on quiet mode, which ignores warnings.
   "eslint.quiet": false,
   // Run the linter on save (onSave) or on type (onType)
@@ -53,5 +54,8 @@
   // Color for the low complexity level
   "codemetrics.basics.ComplexityColorLow": "#4bb14f",
   // Color for the normal complexity level
-  "codemetrics.basics.ComplexityColorNormal": "#ffc208"
+  "codemetrics.basics.ComplexityColorNormal": "#ffc208",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
