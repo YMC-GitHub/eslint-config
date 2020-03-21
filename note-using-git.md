@@ -1,5 +1,9 @@
+# note-using-git
+
+## content
 
 ### 查看某次提交的修改
+
 ```sh
 ::<<eof
 #steps-01获取某次提交的编号
@@ -14,6 +18,7 @@ eof
 ```
 
 ### 这个分支还有哪些提交尚未合并到主分支
+
 ```sh
 ::<<eof
 # 查看“在 experiment 分支中而不在 master 分支中的提交”
@@ -32,6 +37,7 @@ eof
 ```
 
 ###查看某个文件的提交历史
+
 ```sh
 ::<<eof
 git log --pretty=oneline package.json
@@ -39,6 +45,7 @@ eof
 ```
 
 ### 删除某次指定的提交
+
 ```sh
 ::<<eof
 local_old_branch_name=old_master
@@ -63,6 +70,7 @@ eof
 ```
 
 ### 修改提交注释信息
+
 ```sh
 ::<<eof
 # 修改最近一次
@@ -80,6 +88,7 @@ eof
 ```
 
 ### 修改提交的内容
+
 ```sh
 ::<<eof
 # 修改最近一次提交
@@ -105,6 +114,7 @@ eof
 ```
 
 ### 提交次序数量修改
+
 ```sh
 ::<<eof
 # 重排
@@ -116,6 +126,7 @@ eof
 ```
 
 ### 提交批量修改
+
 ```sh
 ::<<eof
 # 批量删除某一文件
@@ -142,8 +153,8 @@ git filter-branch --subdirectory-filter trunk HEAD
 eof
 ```
 
-
 ### 定义自己的个人配置
+
 ```sh
 ::<<eof
 git config user.name "yemiancheng"

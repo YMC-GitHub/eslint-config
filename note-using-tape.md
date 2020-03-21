@@ -1,22 +1,27 @@
+# note-using-travics-ci
+
+## content
+
 ### run as a local module in scripts
+
 ```js
 //test/timing.js
-var test = require('tape');
+var test = require("tape");
 
-test('timing test', function (t) {
-    t.plan(2);
+test("timing test", function(t) {
+  t.plan(2);
 
-    t.equal(typeof Date.now, 'function');
-    var start = Date.now();
+  t.equal(typeof Date.now, "function");
+  var start = Date.now();
 
-    setTimeout(function () {
-        t.equal(Date.now() - start, 100);
-    }, 100);
+  setTimeout(function() {
+    t.equal(Date.now() - start, 100);
+  }, 100);
 });
 ```
 
-
 ### run as a local module in cli
+
 ```sh
 ::<<eof
 # 方式01
@@ -27,6 +32,7 @@ eof
 ```
 
 ### run as a local module in cli for es6+
+
 ```sh
 ::<<eof
 # 方式01
@@ -40,13 +46,15 @@ node test/es6Entry.js
 # the way to use babel
 eof
 ```
+
 ### run as a local module in scripts for es6+
+
 ```js
 //test/es6Entry.js
-require('@babel/register', {
+require("@babel/register", {
   // eslint-disable-line global-require
-  presets: require('../babel.config.js').presets
+  presets: require("../babel.config.js").presets
 });
-require('./requires.js');
-require('./test-base.js');
+require("./requires.js");
+require("./test-base.js");
 ```

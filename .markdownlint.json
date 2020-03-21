@@ -1,0 +1,28 @@
+{
+  "headings": true,
+  "atx": true,
+  "blank_lines": true,
+  "bullet": true,
+  "indentation": true,
+  "whitespace": true,
+  "links": true,
+  "code": true,
+  "ol": true,
+  "html": true,
+  "hr": true,
+  "accessibility": true,
+  "no-multiple-blanks": {
+    "maximum": 2
+  },
+  "line-length": {
+    "line_length": 100,
+    "code_blocks": false,
+    "tables": false
+  },
+  "no-trailing-punctuation": false,
+  "fenced-code-language": false,
+  "proper-names": {
+    "code_blocks": true,
+    "names": ["JavaScript"]
+  }
+}

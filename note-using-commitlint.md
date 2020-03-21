@@ -1,15 +1,21 @@
+# note-using-commitlint
+
+## content
 
 ### download as local module
+
 ```sh
 npm install --save-dev @commitlint/config-angular @commitlint/cli
 ```
 
 ### make a configurantion file
+
 ```sh
 echo "module.exports = {extends: ['@commitlint/config-angular']};" > commitlint.config.js
 ```
 
 ### run as local module
+
 ```sh
 # with an incorret git commit message
 echo "fix(SCOPE): some message" | ./node_modules/.bin/commitlint
@@ -18,6 +24,7 @@ echo "fix(scope): some message" | ./node_modules/.bin/commitlint
 ```
 
 ### the git-commit message format
+
 ```sh
 ::<<eof
 <type>(<scope>): <subject>
@@ -29,6 +36,7 @@ eof
 ```
 
 ### the kind of git-commit message types
+
 ```sh
 ::<<eof
 #@commitlint/config-angular": "^8.0.0"
@@ -50,6 +58,7 @@ it-is-in-influnces-for-config-angular
 ```
 
 ### the type-case of git-commit message types
+
 ```sh
 # examles
 echo "FIX: some message" | ./node_modules/.bin/commitlint # fails
@@ -61,6 +70,7 @@ it-is-in-influnces-for-config-angular
 ```
 
 ### the type-empty of git-commit message types
+
 ```sh
 # examles
 echo ": some message" | ./node_modules/.bin/commitlint # fails
@@ -72,6 +82,7 @@ it-is-in-influnces-for-config-angular
 ```
 
 ### the scope-case of git-commit message scope
+
 ```sh
 # examles
 echo "fix(SCOPE): some message" | ./node_modules/.bin/commitlint # fails
@@ -82,8 +93,8 @@ echo "fix(scope): some message" | ./node_modules/.bin/commitlint # passes
 it-is-in-influnces-for-config-angular
 ```
 
-
 ### the subject-case of git-commit message subject
+
 ```sh
 # examles
 echo "fix(SCOPE): Some message" | ./node_modules/.bin/commitlint # fails
@@ -103,6 +114,7 @@ it-is-in-influnces-for-config-angular
 ```
 
 ### the subject-empty of git-commit message subject
+
 ```sh
 # examles
 echo "fix:" | ./node_modules/.bin/commitlint # fails
@@ -115,6 +127,7 @@ it-is-in-influnces-for-config-angular
 ```
 
 ### the end char of git-commit message subject
+
 ```sh
 # examles
 echo "fix: some message." | ./node_modules/.bin/commitlint # fails
@@ -127,6 +140,7 @@ it-is-in-influnces-for-config-angular
 ```
 
 ### the char length of git-commit message header
+
 ```sh
 # examles
 echo "fix: some message that is way too long and breaks the line max-length by several characters" | ./node_modules/.bin/commitlint # fails
@@ -139,6 +153,7 @@ it-is-in-influnces-for-config-angular
 ```
 
 ### the begin char of git-commit message body
+
 ```sh
 # examles
 echo "fix: some message \r\n i am body" | ./node_modules/.bin/commitlint # passes
@@ -149,6 +164,7 @@ it-is-in-influnces-for-config-angular
 ```
 
 ### the begin char of git-commit message footer
+
 ```sh
 # examles
 echo "fix: some message \r\n i am body \r\n i am footer" | ./node_modules/.bin/commitlint # passes
@@ -159,6 +175,7 @@ it-is-in-influnces-for-config-angular
 ```
 
 ### an idea for using commitlint
+
 ```sh
 # steps-01:write git-commit msg in a flie
 ::<<eof
@@ -168,7 +185,7 @@ docs(commitlint):update git-commit-message style
     write git-commit msg in a flie ,then read , lint and commit:
     write and read from ./.git/COMMIT_EDITMSG or a cunstom flie
     lint with commitlint
-    commit 
+    commit
 eof
 
 # steps-02:read git-commit msg in a flie
@@ -197,13 +214,14 @@ eof
 ```
 
 ### check a git-log history
+
 ```sh
-# steps-01:log all history with `git log` 
+# steps-01:log all history with `git log`
 ::<<eof
 git log --pretty=format:"%B"  > .git/git_log_pretty_B.txt
 eof
 
-# steps-02:get a history with `git log` 
+# steps-02:get a history with `git log`
 ::<<eof
 #2 match a history with some commit msg using --grep
 git log --pretty=format:"%B" --grep="manage with npm"
@@ -246,4 +264,5 @@ git log
 eof
 
 ```
+
 [for more infomation](https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-angular)

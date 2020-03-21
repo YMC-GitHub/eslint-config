@@ -1,4 +1,9 @@
+# note-using-travics-ci
+
+## content
+
 ### CI builds and automation: building, testing, deploying
+
 ```sh
 ::<<eof
 # 构建阶段：克隆仓库代码，执行一系列的构建任务。
@@ -10,6 +15,7 @@ eof
 ```
 
 ### Builds, Jobs, Stages and Phases
+
 ```sh
 ::<<eof
 # 短语：一个任务的若干片段。
@@ -25,8 +31,8 @@ eof
 eof
 ```
 
-
 ### Breaking the Build
+
 ```sh
 ::<<eof
 # 出错：
@@ -42,13 +48,14 @@ eof
 ```
 
 ### To get started with Travis CI
+
 ```sh
 ::<<eof
 # 访问官网
 # https://travis-ci.com/
 
 # 注册账户
-# 
+#
 
 # 认证授权
 
@@ -75,6 +82,7 @@ eof
 ```
 
 ### Customizing the Build
+
 ```sh
 ::<<eof
 # 构建超时
@@ -111,6 +119,7 @@ eof
 ```
 
 ### Encrypting Sensitive Data
+
 ```sh
 ::<<eof
 # steps01-安装软件
@@ -143,6 +152,7 @@ eof
 ```
 
 ### encrypting-files
+
 ```sh
 ::<<eof
 ### 加密单个文件

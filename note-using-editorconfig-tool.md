@@ -1,9 +1,15 @@
+# note-using-editorconfig-tool
+
+## content
+
 ### download as a local module
+
 ```sh
 npm install editorconfig-tools --save-dev
 ```
 
 ### run as a local module in cli
+
 ```sh
 ::<<eof
 # 功能01

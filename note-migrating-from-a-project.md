@@ -1,5 +1,9 @@
+# note-migrating-from-a-project
+
+## content
 
 ### init the project
+
 ```sh
 # from 88e57f7
 git clone https://github.com/YMC-GitHub/commitlint-config.git eslint-config-yemiancheng
@@ -40,12 +44,12 @@ npm install --save-dev
 build(migrating): initing the project by migrating a project
 
    clones the project from 88e57f7 on:
-   git clone https://github.com/YMC-GitHub/commitlint-config.git 
+   git clone https://github.com/YMC-GitHub/commitlint-config.git
    sets up-stream
    updates some files
    deletes some files
    installs npm dev dependences
-   writes commit msg 
+   writes commit msg
    commits the changes
    pushs to the remote
 eof

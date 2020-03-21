@@ -1,4 +1,9 @@
+# note-my-git-commit-style-standard
+
+## content
+
 ### the git-commit message format
+
 ```sh
 ::<<eof
 <type>(<scope>): <subject>
@@ -10,6 +15,7 @@ eof
 ```
 
 ### the kind of git-commit message types
+
 ```sh
 ::<<eof
 #@commitlint/config-angular": "^8.0.0"
@@ -31,6 +37,7 @@ it-is-in-influnces-for-config-angular
 ```
 
 ### the type-case of git-commit message types
+
 ```sh
 # examles
 echo "FIX: some message" | ./node_modules/.bin/commitlint # fails
@@ -42,6 +49,7 @@ it-is-in-influnces-for-config-angular
 ```
 
 ### the type-empty of git-commit message types
+
 ```sh
 # examles
 echo ": some message" | ./node_modules/.bin/commitlint # fails
@@ -53,6 +61,7 @@ it-is-in-influnces-for-config-angular
 ```
 
 ### the scope-case of git-commit message scope
+
 ```sh
 # examles
 echo "fix(SCOPE): some message" | ./node_modules/.bin/commitlint # fails
@@ -63,8 +72,8 @@ echo "fix(scope): some message" | ./node_modules/.bin/commitlint # passes
 it-is-in-influnces-for-config-angular
 ```
 
-
 ### the subject-case of git-commit message subject
+
 ```sh
 # examles
 echo "fix(SCOPE): Some message" | ./node_modules/.bin/commitlint # fails
@@ -84,6 +93,7 @@ it-is-in-influnces-for-config-angular
 ```
 
 ### the subject-empty of git-commit message subject
+
 ```sh
 # examles
 echo "fix:" | ./node_modules/.bin/commitlint # fails
@@ -96,6 +106,7 @@ it-is-in-influnces-for-config-angular
 ```
 
 ### the end char of git-commit message subject
+
 ```sh
 # examles
 echo "fix: some message." | ./node_modules/.bin/commitlint # fails
@@ -108,6 +119,7 @@ it-is-in-influnces-for-config-angular
 ```
 
 ### the char length of git-commit message header
+
 ```sh
 # examles
 echo "fix: some message that is way too long and breaks the line max-length by several characters" | ./node_modules/.bin/commitlint # fails
@@ -120,6 +132,7 @@ it-is-in-influnces-for-config-angular
 ```
 
 ### the begin char of git-commit message body
+
 ```sh
 # examles
 echo "fix: some message \r\n i am body" | ./node_modules/.bin/commitlint # passes
@@ -130,6 +143,7 @@ it-is-in-influnces-for-config-angular
 ```
 
 ### the begin char of git-commit message footer
+
 ```sh
 # examles
 echo "fix: some message \r\n i am body \r\n i am footer" | ./node_modules/.bin/commitlint # passes

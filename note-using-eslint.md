@@ -1,29 +1,39 @@
+# note-using-eslint
+
+## content
+
 ### download as a local module
+
 ```sh
 npm install eslint --save-dev
 ```
 
 ### run as a local module in cli
+
 ```sh
 ./node_modules/.bin/eslint --fix .
 ```
 
 ### create a config running as a local module in cli
+
 ```sh
 ./node_modules/.bin/eslint --init
 ```
 
 ### get the version running as a local module in cli
+
 ```sh
 ./node_modules/.bin/eslint --version
 ```
 
-### print a conf file  running as a local module in cli
+### print a conf file running as a local module in cli
+
 ```sh
 ./node_modules/.bin/eslint --print-config .eslintrc.js
 ```
 
 ### check files running as a local module in cli
+
 ```sh
 # check pwd files
 ./node_modules/.bin/eslint .

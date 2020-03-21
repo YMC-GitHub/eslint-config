@@ -1,4 +1,9 @@
+# note-using-npm
+
+## content
+
 ### look up why install that package
+
 ```sh
 # 查看某包信息
 npm info eslint
@@ -12,6 +17,7 @@ npm outdated --depth=0
 ```
 
 ### 基本用法
+
 ```sh
 # 获取帮助
 #2 简短
@@ -24,6 +30,7 @@ npm -l
 ```
 
 ### access
+
 ```sh
 npm access public [<package>]
 npm access restricted [<package>]
@@ -35,6 +42,7 @@ npm access edit [<package>]
 ```
 
 ### login
+
 ```sh
 # 登录
 #npm adduser [--registry=url] [--scope=@orgname] [--auth-type=legacy] [--always-auth]
@@ -42,6 +50,7 @@ npm access edit [<package>]
 ```
 
 ### whoami
+
 ```
 # 谁在登录
 # npm whoami [--registry <registry>]
@@ -49,12 +58,14 @@ npm whoami
 ```
 
 ### logout
+
 ```sh
 # 登出
 npm logout [--registry=<url>] [--scope=<@scope>]
 ```
 
 ### audit
+
 ```
 # Run a security audit
 # npm audit [--json]
@@ -78,6 +89,7 @@ npm audit fix --only=dev
 ```
 
 ### bin
+
 ```
 # Display npm bin folder
 # npm bin [--global]
@@ -88,6 +100,7 @@ npm bin
 ```
 
 ### bugs
+
 ```
 # Bugs for a package in a web browser maybe
 # npm bugs [<pkgname>]
@@ -97,6 +110,7 @@ npm issues eslint
 ```
 
 ### cache
+
 ```
 # Manipulates packages cache
 # 添加
@@ -113,12 +127,14 @@ npm cache verify
 ```
 
 ### ci
+
 ```
 npm ci
 
 ```
 
 ### config
+
 ```
 # 设置
 npm config set <key> <value>
@@ -141,6 +157,7 @@ alias: c
 ```
 
 ### dedupe
+
 ```
 # 移除重复的包
 # npm dedupe
@@ -151,14 +168,15 @@ npm find-dupes
 ```
 
 ### deprecate
+
 ```
 # 不再维护某包
 #npm deprecate <pkg>[@<version>] <message>
 npm deprecate my-thing@"< 0.2.3" "critical bug fixed in v0.2.3"
 ```
 
-
 ### dist-tag
+
 ```
 # 管理包的构建标签
 # 添加
@@ -173,6 +191,7 @@ npm dist-tag ls [<pkg>]
 ```
 
 ### docs
+
 ```
 # Docs for a package in a web browser maybe
 # npm docs <pkgname>
@@ -181,8 +200,8 @@ npm dist-tag ls [<pkg>]
 npm docs eslint
 ```
 
-
 ### doctor
+
 ```
 # Check your environments
 npm doctor
@@ -190,12 +209,14 @@ npm doctor
 ```
 
 ### get
+
 ```
 npm get <key> <value> (See `npm config`)
 
 ```
 
 ### help-search
+
 ```
 # Search npm help documentation
 npm help-search <text>
@@ -203,6 +224,7 @@ npm help-search <text>
 ```
 
 ### hook
+
 ```
 # Manage registry hooks
 npm hook ls [pkg]
@@ -213,6 +235,7 @@ npm hook rm <id>
 ```
 
 ### init
+
 ```
 #  create a package.json file
 npm init [--force|-f|--yes|-y|--scope]
@@ -224,6 +247,7 @@ aliases: create, innit
 ```
 
 ### install
+
 ```
 # nstall a package
 npm install (with no args, in package dir)
@@ -243,6 +267,7 @@ common options: [--save-prod|--save-dev|--save-optional] [--save-exact] [--no-sa
 ```
 
 ### install-test
+
 ```
 # Install package(s) and run tests
 npm install-test [args]
@@ -253,6 +278,7 @@ alias: it
 ```
 
 ### link
+
 ```
 # Symlink a package folder
 npm link (in package dir)
@@ -263,6 +289,7 @@ alias: ln
 ```
 
 ### list
+
 ```sh
 # List installed packages
 #npm ls [[<@scope>/]<pkg> ...]
@@ -297,12 +324,14 @@ npm list | grep "eslint"
 ```
 
 ### prune
+
 ```sh
 # Remove extraneous packages
 # npm prune [[<@scope>/]<pkg>...] [--production]
 ```
 
 ### outdated
+
 ```sh
 #Check for outdated packages
 # npm outdated [[<@scope>/]<pkg> ...]
@@ -318,7 +347,9 @@ npm outdated --long
 npm outdated --json
 
 ```
+
 ### edit
+
 ```
 #
 # Edit an installed package
@@ -327,12 +358,14 @@ npm outdated --json
 ```
 
 ### explore
+
 ```
 # Browse an installed package
 npm explore <pkg> [ -- <command>]
 ```
 
 ### owner
+
 ```
 npm owner add <user> [<@scope>/]<pkg>
 npm owner rm <user> [<@scope>/]<pkg>
@@ -343,24 +376,28 @@ alias: author
 ```
 
 ### pack
+
 ```
 npm pack [[<@scope>/]<pkg>...] [--dry-run]
 
 ```
 
 ### ping
+
 ```
 npm ping
 
 ```
 
 ### prefix
+
 ```
 npm prefix [-g]
 
 ```
 
 ### profile
+
 ```sh
 # 启用两步认证
 #npm profile enable-2fa [auth-only|auth-and-writes]
@@ -376,6 +413,7 @@ npm profile set <key> <value>
 ```
 
 ### publish
+
 ```
 npm publish [<tarball>|<folder>] [--tag <tag>] [--access <public|restricted>] [--dry-run]
 
@@ -390,65 +428,73 @@ npm publish [<tarball>|<folder>] [--tag <tag>] [--access <public|restricted>] [-
 # 仅仅测试
 ```
 
-
 ### rebuild
+
 ```
 npm rebuild [[<@scope>/<name>]...]
 alias: rb
 ```
 
 ### repo
+
 ```
 # Open package repository page in the browser
 npm repo [<pkg>]
 ```
 
 ### root
+
 ```
 npm root [-g]
 ```
 
 ### run-script
+
 ```
 npm run-script <command> [-- <args>...]
 aliases: run, rum, urn
 ```
 
 ### restart
+
 ```
 npm restart [-- <args>]
 ```
 
 ### start
+
 ```
 npm start [-- <args>]
 ```
 
 ### stop
+
 ```
 npm stop [-- <args>]
 ```
 
 ### test
+
 ```
 npm test [-- <args>]
 aliases: tst, t
 ```
 
-
 ### search
+
 ```
 npm search [--long] [search terms ...]
 aliases: s, se, find
 ```
 
 ### shrinkwrap
+
 ```
 npm shrinkwrap
 ```
 
-
 ### star
+
 ```
 npm star [<pkg>...]
 npm unstar [<pkg>...]
@@ -456,13 +502,14 @@ npm unstar [<pkg>...]
 alias: unstar
 ```
 
-
 ### stars
+
 ```
 npm stars [<user>]
 ```
 
 ### team
+
 ```
 # 创建
 npm team create <scope:team>
@@ -479,6 +526,7 @@ npm team edit <scope:team>
 ```
 
 ### token
+
 ```
 # 列出
 npm token list
@@ -489,23 +537,27 @@ npm token create [--read-only] [--cidr=list]
 ```
 
 ### unpublish
+
 ```
 npm unpublish [<@scope>/]<pkg>[@<version>]
 ```
 
 ### uninstall
+
 ```
 npm uninstall [<@scope>/]<pkg>[@<version>]... [--save-prod|--save-dev|--save-optional] [--no-save]
 aliases: un, unlink, remove, rm, r
 ```
 
 ### update
+
 ```
 npm update [-g] [<pkg>...]
 aliases: up, upgrade, udpate
 ```
 
 ### version
+
 ```
 npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease [--preid=<perelease-id>] | from-git]
 
@@ -519,6 +571,7 @@ npm ls
 ```
 
 ### view
+
 ```
 #npm view [<@scope>/]<pkg>[@<version>] [<field>[.subfield]...]
 #aliases: v, info, show
@@ -529,6 +582,7 @@ npm info "eslint@latest" dependencies
 ```
 
 ### Creating a default package.json file§
+
 ```sh
 :<<eof
 # 自己定义默认选项

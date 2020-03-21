@@ -1,9 +1,15 @@
+# note-using-eslint-find-rules
+
+## content
+
 ### download as a local module
+
 ```sh
 npm install eslint-find-rules --save-dev
 ```
 
 ### run as a local module in cli
+
 ```sh
 ::<<eof
 # 查看所有可用规则
@@ -23,13 +29,14 @@ eof
 ```
 
 ### run as a local module in scripts
+
 ```js
-var getRuleFinder = require('./eslint-find-rules')
-var ruleFinder = getRuleFinder('.eslintrc.js')
-ruleFinder.getCurrentRules()
-ruleFinder.getCurrentRulesDetailed()
-ruleFinder.getPluginRules()
-ruleFinder.getAllAvailableRules()
-ruleFinder.getUnusedRules()
-ruleFinder.getDeprecatedRules()
+var getRuleFinder = require("./eslint-find-rules");
+var ruleFinder = getRuleFinder(".eslintrc.js");
+ruleFinder.getCurrentRules();
+ruleFinder.getCurrentRulesDetailed();
+ruleFinder.getPluginRules();
+ruleFinder.getAllAvailableRules();
+ruleFinder.getUnusedRules();
+ruleFinder.getDeprecatedRules();
 ```
